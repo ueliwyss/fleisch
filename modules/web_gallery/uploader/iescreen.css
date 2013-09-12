@@ -1,0 +1,285 @@
+*{margin:0;padding:0}
+a img{border:none}
+body,h1,h2,td{font:12px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;color:#000}
+.error{color:#ff5e5e;clear:both}
+h1,h2{font:18px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;color:#4f83df}
+h2{font:15px;color:#4f83df;font-weight:bold}
+p{padding:0 0 9px 0;line-height:17px;margin:0}
+a:link,a:hover,a:visited,a:active{color:#000;text-decoration:underline}
+h2 a:link,h2 a:visited,h1 a:link,h1 a:visited{color:#4f83df;text-decoration:none}
+h2 a:hover,h2 a:active,h1 a:hover,h1 a:active{color:#000;text-decoration:none}
+#pagebody{background:url(http://images.lycos-europe.com/m/comc/lycos/cont/gbg.jpg) top left repeat-x;background-color:#c8e8ff;text-align:center;margin:5px 0}
+#popbody{background-color:#9ed1ff;text-align:center;margin:5px 0}
+#popbodytab{background-color:#fff;text-align:center;margin:5px 0}
+.br{overflow:hidden;height:1px;clear:both;background:transparent}
+.brpt{overflow:hidden;height:17px;clear:both;background:url(images/dot.gif) repeat-x;margin:0 7px}
+.colsep{width:17px;overflow:hidden;background:url(images/vdot.gif) repeat-y;margin:3px 0;float:left}
+#container{text-align:left;margin:0 auto;width:767px;position:relative}
+#popcontainer{text-align:left;width:440px}
+#gtc{background:url(images/ghp.gif) top left;height:12px;width:767px;overflow:hidden}
+#ghf{background:url(images/ghf.gif);border:1px solid #000;border-width:0 1px;height:33px;width:auto;position:relative;z-index:10}
+#ghp{background:url(images/ghp.gif) top left no-repeat;height:41px;width:767px;border-bottom:1px solid #000}
+#gtabs{position:absolute;right:3px;bottom:-5px;width:558px;z-index:11}
+#gtabs a{background:url(images/tabi.gif);display:block;color:#000;line-height:33px;text-decoration:none;width:93px;height:33px;overflow:hidden;text-align:center;float:left}
+a#gtab1{background:url(images/gtab1a.gif)}
+a#gtab2:hover{background:url(images/gtab2.gif)}
+a#gtab3:hover{background:url(images/gtab3.gif)}
+a#gtab4:hover{background:url(images/gtab4.gif)}
+a#gtab5:hover{background:url(images/gtab5.gif)}
+a#gtab6:hover{background:url(images/gtab6.gif)}
+#gsm{background:url(images/gsm.gif);border:1px solid #000;border-width:0 1px;width:auto;height:29px;overflow:hidden;clear:both}
+#gsm a{text-decoration:none;color:#000;line-height:29px;padding:2px 4px}
+#gsm a:hover{text-decoration:underline}
+#gban{position:relative;width:767px;height:90px;border:1px solid #000;border-width:0 1px;overflow:visible;z-index:10;clear:both;background:url(http://images.lycos-europe.com/m/comc/lycos/cont/gbanbg.jpg) top left}
+#lea_728x90_x{position:absolute;top:0;left:18px;z-index:10}
+#lea_468x60_x{position:absolute;top:15px;left:149px;z-index:10}
+#pmstr{width:32px;height:32px;margin:4px 5px 4px 8px;float:left}
+#genlog{margin:0 10px 0 0;float:left}
+#product{float:left;height:41px;font-size:26px;color:#d70101;margin:0;padding-top:4px}
+
+#searchline{background-color:#fff;border:1px solid #000;border-width:0 1px 1px 1px;text-align:center;width:auto;padding:2px 0px;overflow:hidden;height:33px;line-height:20px}#searchline div{height:33px;line-height:20px}
+#searchline .searchside a{text-decoration:none}
+#searchline .searchside{float:left;text-align:left;padding:3px 0 0 3px}#searchline .side#rightside{text-align:right}
+#searchline .searchcenter{background-color:#fff;float:left}#searchline .searchcenter *{height:22px}
+#searchline .searchcenter label{font-size:18px}
+#searchline .searchcenter #querystring{width:200px;font-family:"Trebuchet MS", Tahoma, Geneva, Arial, Helvetica, sans-serif;font-size:13px;margin:0px 5px}
+#searchline .searchcenter #querycat{font-family:"Trebuchet MS", Tahoma, Geneva, Arial, Helvetica, sans-serif;font-size:11px;margin:0px 5px}
+
+#poptabs{background:url(images/tabbg.gif) repeat-x bottom left;padding:0 4px;width:440px;clear;both;height:29px}
+#poptabs a{height:29px;display:block;float:left;text-decoration:none;text-align:center;width:108px;line-height:29px}
+#poptabs a.atab{background:url(images/atab.gif);font-weight:bold}
+#poptabs a.itab{background:url(images/itab.gif)}
+#gc{width:auto;background-color:#9ed3fd;border:1px solid #000;border-width:0 1px;padding:3px 5px}
+#popgc{background-color:#9ed1ff}
+#gfl,#gfnl{border-top:1px solid #000;background:url(images/gf.gif) bottom left no-repeat;height:23px;line-height:20px;width:767px;overflow:hidden}
+#gfnl{background:url(images/gf.gif) bottom left no-repeat;height:59px;text-align:center;color:#888;font:11px}#gfnl a{text-decoration:none;color:#888}
+#fhtools{height:35px;width:767px;line-height:35px;border:1px solid #000;background-color:#fff}
+#fhtools .button{margin:6px 0;float:right;height:23px}
+#fhtools .button *{float:left}
+#fhtools #mailname{float:left;font:24px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;color:#4f83df;margin:1px 2px}
+#phtools{float:right;height:41px;width:450px;line-height:41px}
+#phtools .button{margin:9px 0;float:right;height:23px}
+#phtools .button *{float:left}
+.login{line-height:23px;height:23px;font-weight:bold;margin-right:6px;overflow:hidden}
+#cont,#menu{margin-right:4px;float:left}
+#menu{width:126px;overflow:hidden}
+#tool{height:31px;line-height:31px;margin-bottom:3px;position:relative;z-index:0}
+#popcont{height:540px;background-color:#9ed1ff;margin:0 4px}
+#homead{margin:0 4px}
+
+#tool .left,#tool .med,#tool .popmed,#tool .right,#tool .sepm{float:left;margin:0}
+#tool .sepm{margin:4px 3px 4px 0}
+#tool #help{float:right;width:18px;height:18px;background:url(images/help.gif) top left no-repeat;margin:7px 0;cursor:pointer}
+#tool .left{background:url(images/left.gif) top left no-repeat;width:9px;height:31px;line-height:31px}
+#tool .med,#tool .popmed{background:url(images/med.gif) top left repeat-x;width:605px;line-height:31px;height:31px}
+#tool .popmed{width:414px}
+#tool .right{background:url(images/right.gif) top left no-repeat;width:9px;height:31px;line-height:31px}
+
+#search{clear:both;position:absolute;top:23px;left:0;height:31px}
+#search .left,#search .med, #search .right{height:31px;line-height:31px;float:left}
+#search .left{background:url(images/left_search.gif) top left no-repeat;width:9px}
+#search .med{background:url(images/med_search.gif) top left repeat-x;width:605px}
+#search .right{background:url(images/right_search.gif) top left no-repeat;width:9px}
+
+#cont,#tool,#contf,#contft{width:623px}
+#popconth,#popcontm,#popcontf{width:432px}
+#popcontm{overflow-y:auto;height:369px}
+#conth{background:url(images/conth.gif) top left no-repeat;overflow:hidden;border-bottom:1px solid #666;height:26px}
+#popconth{background:url(images/popconth.gif) top left no-repeat;height:26px;border-bottom:1px solid #666}
+#bigconth{background:url(images/bigconth.gif) top left no-repeat;overflow:hidden;border-bottom:1px solid #666;height:26px;width:753px}
+#contm{background:#fff;width:623px;border:1px solid #666;border-width:0 1px}
+#popcontm{background-color:#fff;border:1px solid #666;border-width:0 1px}
+#bigcontm{background:#fff;width:753px;border:1px solid #666;border-width:0 1px}
+#topnav{height:25px;line-height:25px;width:auto;background:#fff;border:1px solid #666;border-width:0 1px 1px 1px;clear:both;text-align:center}
+#topnav a{margin:0 1em 0 4px}
+#contf,#contft,#popcontf{clear:both;background:url(images/contf.gif) top left no-repeat;height:7px}#contf{overflow:hidden}
+#contft,#popcontf,#bigcontft{height:31px;border-top:1px solid #666}
+#contft *,#popcontf *{float:left}
+#popcontf{background:url(images/popcontf.gif) bottom left no-repeat}
+#contft{background:url(images/contft.gif) bottom left no-repeat}
+#bigcontf{clear:both;background:url(images/bigcontf.gif) top left no-repeat;height:7px;overflow:hidden;width:753px}
+#bigcontft{clear:both;background:url(images/bigcontft.gif) top left no-repeat;height:35px;overflow:hidden;width:753px}
+
+.setblock{background-color:transparent}
+.setblock .imgset{float:left;margin:0 0 10px 30px}
+.setblock .set{float:left;margin-left:20px;width:300px}
+
+#menu .med,#menu .top,#menu .bot,#menu .medon,#menu .topon,#menu .boton,#menu .conttopon{background:url(images/medmenu.gif) top left;width:126px;height:30px;overflow:hidden;display:block;text-decoration:none;line-height:30px}
+#menu .conttopon{background:url(images/conttopon.gif)}
+#menu .top{background:url(images/topmenu.gif)}
+#menu .bot{background:url(images/botmenu.gif);border:none}
+#menu .medon, #menu .boton, #menu .topon{font-weight:bold}
+#menu .medon{background:url(images/iemedmenuover.gif) top left}
+#menu .topon{background:url(images/ietopmenuover.gif) top left}
+#menu .boton{background:url(images/iebotmenuover.gif) top left}
+#menu .boton{border:none}
+#menu a.med:active,#menu a.top:active,#menu a.bot:active{font-weight:bold}
+#menu #submenus{overflow:hidden;position:relative;width:126px;background:url(images/submenus.gif) top left repeat-y}
+#menu #scrtools{overflow:hidden;width:126px;background:url(images/submenus.gif) top left repeat-y;height:17px}
+#menu #up,#menu #down{text-align:center;width:63px;float:left;display:block}
+#menu .submenu,#menu .submenubold,#menu .submenuboldcrt,#menu .submenucrt{font-size:9px;width:126px;height:26px;display:block;text-decoration:none;line-height:26px;background:url(images/submenu.gif) top left;overflow:hidden}
+#menu .submenuboldcrt,#menu .submenubold{font-weight:bold}
+#menu .submenuboldcrt,#menu .submenucrt{background:url(images/submenuscrt.gif) top left repeat-y;text-decoration:none}
+#menu #quota{margin-top:4px;width:126px;background:url(images/quota.gif) top left no-repeat;overflow:hidden;padding:6px 0 0 8px;height:92px;position:relative}
+#quota #storage{height:51px}
+#quota #sms{height:40px;line-height:40px}
+#quota .text{float:left}
+.plus{height:16px;width:16px;float:right;margin-right:3px}
+#quota .fill{position:absolute;top:34px;left:10px;height:5px;overflow:hidden}
+.extmenu{background:url(images/extmenu.gif);width:126px;height:82px;margin-top:4px}
+.extmenu *{float:left}.extmenu .first,.extmenu .sec{height:28px;margin-top:1px;width:90px;margin-top:11px}
+.menubox{width:126px;margin:0 0 4px 0;line-height:16px}.menubox .menuboxtop{background:url(images/boxtop.gif);height:26px;line-height:26px;font-weight:bold;padding:0 8px}.menubox .menuboxbot{background:url(images/boxbot.gif) bottom left;padding:6px 8px 8px 8px}
+.menuboxbot a{text-decoration:none}
+#loginbutton{background:url(images/loginbutton.gif);width:104px;height:23px;text-align:center;line-height:23px;margin:4px 0 0 0;cursor:pointer}
+
+#bigquota{margin-top:4px;width:279px;background:url(images/bigquota.gif) top left no-repeat;overflow:hidden;padding:6px 0 0 8px;height:20px}
+#bigquota .fill{position:absolute;top:6px;left:6px;height:5px;overflow:hidden}
+#mediumquota{margin-top:4px;width:140px;background:url(images/mediumquota.gif) top left no-repeat;overflow:hidden;padding:6px 0 0 8px;height:20px}
+#mediumquota .fill{position:absolute;top:6px;left:6px;height:5px;overflow:hidden}
+
+.mandatory{color:#f00;font-size:10px;float:left;position:relative;left:10px;height:10px}
+.icon{margin:0 5px}
+.subicon{margin:0 5px 0 16px}
+.btnicon{margin:0 4px 0 0}
+.toolimg{height:31px;line-height:31px;display:block}
+.subbtnicon{margin:0 4px 0 1px}
+
+.lst{width:621px}
+.popuplst{width:390px}
+.lst .col{float:left;overflow:hidden}
+.lst .sep{width:1px;cursor:e-resize;float:left;overflow:hidden;background:url(images/cellbg.gif) top left repeat-y}
+.cell,.topcell,.topcelloff,.imgcell,.chkcell,.celloff,.cellunread,.cellblue{line-height:26px;height:26px}
+a.topcell,a.topcelloff{text-decoration:none;display:block;background-color:#f5f5f5;overflow:hidden;border-bottom:1px solid #666;border-right:1px solid #666;font-weight:bold;padding:0 4px}
+a.topcelloff{border-right:none}
+a.celloff{cursor:default}
+a.cell:hover,a.cell:visited,a.cellunread:hover,a.cellunread:visited,a.topcell:hover,a.cellblue,a.cellblue:hover,a.cellblue:visited{text-decoration:none;color:#000}
+a.cellblue,a.cellblue:hover,a.cellblue:visited{color:#5082e1}
+a.cellunread{font-weight:bold}
+a.cell,a.imgcell,a.chkcell,a.celloff,a.cellunread,a.cellblue{text-decoration:none;display:block;padding:0 4px;border-bottom:1px solid #dee7ee;overflow:hidden}
+a.imgcell,a.chkcell{cursor:default}
+.lstchk{margin-top:3px;margin-right:1px}
+div.topcell,a.topcelloff{text-decoration:none;display:block;background-color:#f5f5f5;overflow:hidden;border-bottom:1px solid #666;border-right:1px solid #666;font-weight:bold;padding:0 4px}
+
+.thumb{float:left;background-color:#fff;width:310px;height:110px;padding:6px}
+.thumb .data{margin:0 0 0 70px;line-height:20px;padding:0;height:20px}
+.thumb .data .label{width:55px;float:left;overflow:hidden}.thumb .data .value{width:130px;float:left;overflow:hidden}
+.thumbsepv{background-color:#d2d7dd;width:1px;height:110px;float:left}
+.thumbseph{background-color:#d2d7dd;width:602px;height:1px;clear:both;margin:0 6px;overflow:hidden}
+
+.form,.popform{margin:0 1px;background:#fff;overflow-y:scroll;overflow-x:hidden}.form{height:389px}
+.boxblock,.plainblock,.boxtop,.boxbot{overflow:visible;margin:0 7px;clear:both}
+.boxblock{padding:7px}
+.plainblock{padding-top:7px}
+.boxblock{border:1px solid #a5a5a5;border-width:0 1px}
+.boxtop *{float:left;height:27px;line-height:27px;font-weight:bold}
+.boxbot *{float:left;height:9px;overflow:hidden}
+.boxtop .L{background:url(images/topL.gif);width:8px}
+.boxtop .C{background:url(images/topRopen.gif);width:23px}
+.boxtop .Rclose{background:url(images/topRclose.gif);width:23px}
+.boxtop .Roff{background:url(images/topRoff.gif);width:23px}
+.boxbot .L{background:url(images/botL.gif);width:7px}
+.boxbot .C{background:url(images/botC.gif) repeat-x}
+.boxbot .R{background:url(images/botR.gif);width:7px}
+.boxcol{float:left}
+.formitem,.formlabel{float:left;margin:2px 0;line-height:22px}
+.textarea,.textareaerr{font-size:12px;font-family:"trebuchet ms";color:#000;border:1px #809fbb solid}
+.textareaerr{border:2px #ff5e5e solid}
+.textareaoff{color:#000;border:1px #fff solid}
+.select{font:12px "Trebuchet MS",Tahoma,Geneva,Arial,Helvetica,sans-serif;color:#000;border-color:#c0c0c0}
+#grnames{height:29px}
+#readmsg,#attach{margin:5px}
+#rattach{height:6px;border:1px solid #7f7f7f;border-width:1px 0;background:url(images/rattachbg.gif) repeat-x}
+#rattachimg{margin:0 270px;cursor:n-resize}
+
+.button{margin:4px 0;position:relative;z-index:1;float:left}
+.button *{float:left}
+.btndrp .L,.logindrp .L,.drp .L,.btn .L{background:url(images/btnL.gif);width:5px;height:23px}
+.logindrp .L,.drp .L{background:url(images/drpL.gif)}
+.btn .L{background:url(images/btnL.gif)}
+.btndrp a.btnlink,.logindrp .label,.drp .label,.btn a.label{display:block;background:url(images/btnC.gif) repeat-x;height:23px;padding:0 3px 0 0;color:#000;text-decoration:none;font:12px "Trebuchet MS",Tahoma,Geneva,Arial,Helvetica,sans-serif;line-height:23px;cursor:pointer}
+.btndrp a.btnlink:visited,.btndrp a.btnlink:hover,.btndrp a.btnlink:active,.btn a.label:hover,.btn a.label:active,.btn a.label:visited{text-decoration:none}
+.btn span.label{display:block;background:url(images/btnC.gif) repeat-x;height:23px;padding:0 3px 0 0;color:#616161;text-decoration:none;font:12px "Trebuchet MS",Tahoma,Geneva,Arial,Helvetica,sans-serif;line-height:23px;cursor:default}
+.btn .label input{text-decoration:none;border:0px solid #000;background:transparent;font:12px "Trebuchet MS", Tahoma, Geneva, Arial, Helvetica, sans-serif;color:#000;cursor:pointer;margin-top:2px;height:21px}
+.drp .label{cursor:default}
+.drp .label,.logindrp .label{background:url(images/drpC.gif)}
+.btn .label{background:url(images/btnC.gif)}
+.btndrp .R,.logindrp .R,.drp .R,.btn .R{background:url(images/drpR.gif);width:21px;height:23px;margin-right:4px;cursor:pointer}
+.logindrp .R,.drp .R{background:url(images/drpR.gif)}
+.btn .R{background:url(images/btnR.gif);width:5px}
+.button .subbtndrp,.button .subdrp{position:absolute;top:19px;left:0;border-bottom:1px solid #777;display:none;z-index:2;overflow:hidden}
+.trans,.trans *{height:6px}
+.trans{overflow:hidden}
+.trans .transL{background-color:#fff;border-left:1px solid #777}
+.trans .transC{width:1px;background:url(images/transC.gif) top left no-repeat}
+.trans .transR{background:url(images/transR.gif) top left repeat-x}
+.subbtndrp a,.subdrp a,.subdrp a:visited,.subbtndrp a:visited{text-decoration:none;clear:both;line-height:20px;height:20px;display:block;border:1px solid #777;border-width:0 1px;background-color:#fff;padding:0 0 0 3px;overflow:hidden}
+.subdrp a:hover,.subbtndrp a:hover{background-color:#f5f5f5;text-decoration:none;overflow:hidden}
+.link a.linklink{display:block;background:url(images/link.gif) repeat-x;height:23px;padding:0 3px 0 0;color:#000;text-decoration:none;font:12px "Trebuchet MS",Tahoma,Geneva,Arial,Helvetica,sans-serif;line-height:23px;cursor:pointer}
+.link .L,.link .R{background:url(images/linkside.gif);width:1px;height:23px}
+
+.btnmain .L{background:url(images/iebtnLover.gif);width:5px;height:23px}
+.btnmain .label{display:block;background:url(images/iebtnCover.gif) repeat-x;height:23px;padding:0 3px 0 0;color:#000;font:12px "Trebuchet MS",Tahoma,Geneva,Arial,Helvetica,sans-serif;line-height:23px;cursor:pointer}
+.btnmain .R{background:url(images/iebtnRover.gif);width:5px;height:23px}
+.btnmain a.label,.btnmain a.label:hover,.btnmain a.label:active,.btnmain a.label:visited{text-decoration:none;}
+.btnmain span.label{text-decoration:none;color:#616161}
+.btnmain .label input{text-decoration:none;border:0px solid #000;background:transparent;font:12px "Trebuchet MS", Tahoma, Geneva, Arial, Helvetica, sans-serif;color:#000;cursor:pointer;margin-top:2px;height:21px}
+
+.bluebox{background:#c8e7ff;float:left;overflow:hidden}
+.bluebox .topleft, .bluebox .topright, .bluebox .bottomleft, .bluebox .bottomright{width:9px;height:9px;line-height:9px;overflow:hidden}
+.bluebox .topleft{float:left;background:url(images/boxTL.gif)}
+.bluebox .topright{float:right;background:url(images/boxTR.gif)}
+.bluebox .bottomleft{float:left;background:url(images/boxBL.gif)}
+.bluebox .bottomright{float:right;background:url(images/boxBR.gif)}
+.bluebox .content{margin:0px 9px;line-height:24px}
+.bluebox .corners{overflow:hidden;height:9px}
+
+.tipcontainer{position:relative;clear:both;float:left}
+.tip{display:none;z-index:5}
+.tip *{overflow:hidden;float:left}
+.tip .top,.tip .bot{height:9px;clear:both}
+.tip .med{clear:both}
+.tip .top *,.tip .bot *{height:9px}
+.top .topR,.med .medR,.bot .botR{width:9px;height:9px}
+.top .topL,.med .medL,.bot .botL{width:24px;height:9px}
+.top .topL{background:url(images/tl.gif)}
+.top .topC{background:url(images/tc.gif) top left repeat-x}
+.top .topR{background:url(images/tr.gif)}
+.med .medL{background:url(images/ml.gif) top left repeat-y;position:relative}
+.med .medC{background-color:#f5f5f5}
+.med .medR{background:url(images/mr.gif) top left repeat-y}
+.bot .botL{background:url(images/bl.gif)}
+.bot .botC{background:url(images/bc.gif) top left repeat-x}
+.bot .botR{background:url(images/br.gif)}
+.arr{width:24px;height:11px;z-index:10;background:url(images/arr.gif) top left no-repeat}
+
+.bluelinebox{height:31px;float:left}
+.bluelinebox div{float:left;height:31px}
+.bluelinebox .L{background:url(images/bluelineboxL.gif) top left;width:9px}
+.bluelinebox .C{background:url(images/bluelineboxC.gif) top left repeat-x}
+.bluelinebox .R{background:url(images/bluelineboxR.gif) top left;width:9px}
+.redlinebox{height:44px;float:left;color:#ff0101}
+.redlinebox div{float:left;height:44px}
+.redlinebox .L{background:url(images/redlineboxL.gif) top left;width:12px}
+.redlinebox .C{background:url(images/redlineboxC.gif) top left repeat-x}
+.redlinebox .R{background:url(images/redlineboxR.gif) top left;width:12px}
+
+.bluefullbox,.redfullbox{height:57px;float:left;color:#fff;overflow:hidden}
+.bluefullbox div,.redfullbox div{float:left;height:57px}
+.bluefullbox .L{background:url(images/bluefullboxL.gif) top left;width:8px}
+.bluefullbox .C{font-weight:bold;background-color:#5083df}
+.bluefullbox .R{background:url(images/bluefullboxR.gif) top left;width:8px}
+.redfullbox .L{background:url(images/redfullboxL.gif) top left;width:8px}
+.redfullbox .C{font-weight:bold;background-color:#fe0000}
+.redfullbox .R{background:url(images/redfullboxR.gif) top left;width:8px}
+
+.redfullbox .C .colorCtop,.bluefullbox .C .colorCtop{font-size:11px;line-height:11px}
+.redfullbox .C .colorCmed,.bluefullbox .C .colorCmed{font-size:25px;text-align:center;line-height:25px}
+.redfullbox .C .colorCbot,.bluefullbox .C .colorCbot{font-size:11px;text-align:right;line-height:11px}
+
+.unselected {height:20px;overflow:hidden;marging-left:2px}
+.selected {height:20px;overflow:hidden;marging-left:2px;background-color:#DEE7EE;}
+.composemailcompl {background:#fff;display:none;position:absolute;left:-445px;z-index:100;border:1px solid #819FBB;width:350px}
+.composesmscompl {background:#fff;display:none;position:absolute;top:30px;left:-534px;z-index:100;border:1px solid #819FBB;width:263px}
+
+.whatIsLycosMail{margin-top:10px;}
+.blockDiv{float:left}

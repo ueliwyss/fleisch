@@ -1,0 +1,16 @@
+<module>
+	<name>web_gallery</name>
+	<version>0.9</version>
+	<components>
+		<mainclass>class.gallery.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<Gallery>edit_album.php</Gallery>
+		</subMenuItems>
+	</menu>
+</module>
+	

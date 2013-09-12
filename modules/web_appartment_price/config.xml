@@ -1,0 +1,18 @@
+<module>
+	<name>web_contact</name>
+	<version>0.9</version>
+	<components>
+		<mainclass>class.appartment_price.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Wohnungen</topLevel>
+		<subMenuItems>
+			<wohnungen>edit_appartment.php</wohnungen>
+			<preise>edit_appartment_price.php</preise>
+			<jahresabschnitt>edit_appartment_season.php</jahresabschnitt>
+		</subMenuItems>
+	</menu>
+</module>
+	

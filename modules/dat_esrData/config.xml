@@ -1,0 +1,11 @@
+<module>
+	<name>dat_user</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.esrData.php</mainclass>
+	</components>
+	<type>Datamanagement</type>
+	<active>1</active>
+	
+</module>
+	

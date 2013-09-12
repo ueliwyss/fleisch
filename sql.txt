@@ -1,0 +1,1049 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.1
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql.ferienwallis.com
+-- Erstellungszeit: 15. Januar 2011 um 12:27
+-- Server Version: 5.0.67
+-- PHP-Version: 5.2.14
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Datenbank: `ferienwalliscom1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `addition`
+--
+
+CREATE TABLE IF NOT EXISTS `addition` (
+  `uid` int(11) NOT NULL auto_increment,
+  `a_created` datetime default NULL,
+  `a_creator_id` int(11) default NULL,
+  `a_type` int(11) default NULL,
+  `a_text` varchar(1000) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `addition`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `album`
+--
+
+CREATE TABLE IF NOT EXISTS `album` (
+  `uid` int(11) NOT NULL auto_increment,
+  `a_created` datetime default NULL,
+  `a_description` varchar(200) collate latin1_german1_ci default NULL,
+  `a_name` varchar(200) collate latin1_german1_ci default NULL,
+  `a_parent_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `album`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `appartment`
+--
+
+CREATE TABLE IF NOT EXISTS `appartment` (
+  `uid` int(11) NOT NULL auto_increment,
+  `a_name` varchar(200) collate latin1_german1_ci default NULL,
+  `a_description` varchar(200) collate latin1_german1_ci default NULL,
+  `a_stars` varchar(200) collate latin1_german1_ci default NULL,
+  `a_images` varchar(5000) collate latin1_german1_ci default NULL,
+  `a_order` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=13 ;
+
+--
+-- Daten für Tabelle `appartment`
+--
+
+INSERT INTO `appartment` (`uid`, `a_name`, `a_description`, `a_stars`, `a_images`, `a_order`) VALUES
+(1, 'fw_appartment_selika_2CH', 'Selika / 2 Zimmer', '4', 'images/app_selika_2CH_1_thumb.png||images/app_selika_2CH_1.jpg||Küche\r\nimages/app_selika_2CH_2_thumb.png||images/app_selika_2CH_2.jpg||Bad\r\nimages/app_selika_2CH_3_thumb.jpg||images/app_selika_2CH_3.jpg||Schlafzimmer\r\nimages/app_selika_2CH_4_thumb.jpg||images/app_selika_2CH_4.jpg||Sitzplatz\r\nimages/app_selika_2CH_5_thumb.jpg||images/app_selika_2CH_5.jpg||Wohnzimmer', 1),
+(2, 'fw_appartment_selika_3.5CH', 'Selika / 3.5 Zimmer', '5||images/selika5_312_eg.JPG', 'images/app_selika_3.5CH_2_thumb.jpg||images/app_selika_3.5CH_2.jpg||Schlafzimmer\r\nimages/app_selika_3.5CH_3_thumb.jpg||images/app_selika_3.5CH_3.jpg||Wohnzimmer\r\nimages/app_selika_3.5CH_4_thumb.jpg||images/app_selika_3.5CH_4.jpg||Grundriss', 5),
+(3, 'fw_appartment_selika_3.5CHCR', 'Selika 3.5Zi CR', '5', 'images/app_selika_3.5CHCR_1_thumb.jpg||images/app_selika_3.5CHCR_1.jpg||Schlafzimmer\r\nimages/app_selika_3.5CHCR_2_thumb.jpg||images/app_selika_3.5CHCR_2.jpg||Bad\r\nimages/app_selika_3.5CHCR_3_thumb.jpg||images/app_selika_3.5CHCR_3.jpg||Küche\r\nimages/app_selika_3.5CHCR_4_thumb.jpg||images/app_selika_3.5CHCR_4.jpg||Wohnzimmer\r\nimages/app_selika_3.5CHCR_5_thumb.jpg||images/app_selika_3.5CHCR_5.jpg||Grundriss', 6),
+(4, 'fw_appartment_selika_4.5CH', 'Selika 4.5Zi', '4', 'images/app_selika_4.5CH_1_thumb.jpg||images/app_selika_4.5CH_1.jpg||Balkon\r\nimages/app_selika_4.5CH_2_thumb.jpg||images/app_selika_4.5CH_2.jpg||Schlafzimmer\r\nimages/app_selika_4.5CH_3_thumb.jpg||images/app_selika_4.5CH_3.jpg||Wohnzimmer\r\nimages/app_selika_4.5CH_4_thumb.jpg||images/app_selika_4.5CH_4.jpg||Küche\r\nimages/app_selika_4.5CH_5_thumb.jpg||images/app_selika_4.5CH_5.jpg||Grundriss', 7),
+(6, 'fw_appartment_adora_2.5CH', 'Adora 2.5Zi', '4', 'images/app_adora_2.5CH_1_thumb.jpg||images/app_adora_2.5CH_1.jpg||Wohnzimmer\r\nimages/app_adora_2.5CH_2_thumb.jpg||images/app_adora_2.5CH_2.jpg||Küche\r\nimages/app_adora_2.5CH_3_thumb.jpg||images/app_adora_2.5CH_3.jpg||Bad\r\nimages/app_adora_2.5CH_4_thumb.jpg||images/app_adora_2.5CH_4.jpg||Schlafzimmer', 2),
+(9, 'fw_appartment_adora_3.5CHBlue', 'Adora 3.5Zi Blau', '5', 'images/app_adora_3.5CHBlue_1_thumb.jpg||images/app_adora_3.5CHBlue_1.jpg||Schlafzimmer\r\nimages/app_adora_3.5CHBlue_2_thumb.jpg||images/app_adora_3.5CHBlue_2.jpg||Küche\r\nimages/app_adora_3.5CHBlue_3_thumb.jpg||images/app_adora_3.5CHBlue_3.jpg||Bad\r\nimages/app_adora_3.5CHBlue_4_thumb.jpg||images/app_adora_3.5CHBlue_4.jpg||Wohnzimmer\r\nimages/app_adora_3.5CHBlue_5_thumb.jpg||images/app_adora_3.5CHBlue_5.jpg||Grundriss', 4),
+(10, 'fw_appartment_adora_3.5CHLeft', 'Adora 3.5Zi Links', '4', 'images/app_adora_3.5CHLeft_1_thumb.jpg||images/app_adora_3.5CHLeft_1.jpg||Küche\r\nimages/app_adora_3.5CHLeft_2_thumb.jpg||images/app_adora_3.5CHLeft_2.jpg||Schlafzimmer\r\nimages/app_adora_3.5CHLeft_3_thumb.jpg||images/app_adora_3.5CHLeft_3.jpg||Bad\r\nimages/app_adora_3.5CHLeft_4_thumb.jpg||images/app_adora_3.5CHLeft_4.jpg||Balkon\r\nimages/app_adora_3.5CHLeft_5_thumb.jpg||images/app_adora_3.5CHLeft_5.jpg||Grundriss', 3),
+(11, 'fw_appartment_adora_6.5CH', 'Adora 6.5Zi', '5', 'images/app_adora_6.5CH_1_thumb.jpg||images/app_adora_6.5CH_1.jpg||Küche\r\nimages/app_adora_6.5CH_2_thumb.jpg||images/app_adora_6.5CH_2.jpg||Wohnzimmer\r\nimages/app_adora_6.5CH_3_thumb.jpg||images/app_adora_6.5CH_3.jpg||Schlafzimmer\r\nimages/app_adora_6.5CH_4_thumb.jpg||images/app_adora_6.5CH_4.jpg||Bad\r\nimages/app_adora_6.5CH_5_thumb.jpg||images/app_adora_6.5CH_5.jpg||Wohnzimmer\r\nimages/app_adora_6.5CH_6_thumb.jpg||images/app_adora_6.5CH_6.jpg||Galerie\r\nimages/app_adora_6.5CH_7_thumb.jpg||images/app_adora_6.5CH_7.jpg||Grundriss', 8),
+(12, 'fw_appartment_selika_5.5CH', 'Selika 5.5Zi.', '0', 'images/app_selika_5.5CH_1_thumb.jpg||images/app_selika_5.5CH_1.jpg||Aussicht\r\nimages/app_selika_5.5CH_2_thumb.jpg||images/app_selika_5.5CH_2.jpg||Wohnzimmer\r\nimages/app_selika_5.5CH_3_thumb.jpg||images/app_selika_5.5CH_3.jpg||Bad\r\nimages/app_selika_5.5CH_4_thumb.jpg||images/app_selika_5.5CH_4.jpg||Grundriss', 9);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `appartment_price`
+--
+
+CREATE TABLE IF NOT EXISTS `appartment_price` (
+  `uid` int(11) NOT NULL auto_increment,
+  `p_name` varchar(200) collate latin1_german1_ci default NULL,
+  `p_currency` varchar(200) collate latin1_german1_ci default NULL,
+  `p_value` varchar(200) collate latin1_german1_ci default NULL,
+  `p_appartment_id` int(11) default NULL,
+  `p_seasontype_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=40 ;
+
+--
+-- Daten für Tabelle `appartment_price`
+--
+
+INSERT INTO `appartment_price` (`uid`, `p_name`, `p_currency`, `p_value`, `p_appartment_id`, `p_seasontype_id`) VALUES
+(4, 'selika_3.5ziEG_vorUnachSaison', 'CHF', '610', 2, 5),
+(3, 'selika_2zi_vorUnachSaison', 'CHF', '390', 1, 5),
+(5, 'selika_3.5ziCR_vorUnachSaison', 'CHF', '590', 3, 5),
+(6, 'selika_4.5Zi_vorUnachSaison', 'CHF', '720', 4, 5),
+(12, 'selika_2zi_zwischensaison', 'CHF', '620', 1, 4),
+(8, 'adora_2.5zi_vorUnachSaison', 'CHF', '460', 6, 5),
+(9, 'adora_3.5ZiBlau_vorUnachSaison', 'CHF', '590', 9, 5),
+(13, 'selika_3.5ziEG_zwischensaison', 'CHF', '880', 2, 4),
+(10, 'adora_3.5ziLinks_vorUnachSaison', 'CHF', '590', 10, 5),
+(11, 'adora_6.5zi_vorUnachSaison', 'CHF', '980', 11, 5),
+(14, 'selika_3.5ziCR_zwischensaison', 'CHF', '850', 3, 4),
+(15, 'selika_4.5zi_zwischensaison', 'CHF', '1050', 4, 4),
+(16, 'adora_2.5zi_zwischensaison', 'CHF', '700', 6, 4),
+(17, 'adora_3.5ziBlau_zwischensaison', 'CHF', '850', 9, 4),
+(18, 'adora_3.5ziLinks_zwischensaison', 'CHF', '850', 10, 4),
+(19, 'adora_6.5zi_zwischensaison', 'CHF', '1200', 11, 4),
+(20, 'selika_2zi_hochsaison', 'CHF', '930', 1, 2),
+(21, 'selika_3.5ziEG_hochsaison', 'CHF', '1190', 2, 2),
+(22, 'selika_3.5ziCR_hochsaison', 'CHF', '1160', 3, 2),
+(23, 'selika_4.5zi_hochsaison', 'CHF', '1490', 4, 2),
+(24, 'adora_2.5zi_hochsaison', 'CHF', '990', 6, 2),
+(25, 'adora_3.5ziBlau_hochsaison', 'CHF', '1160', 9, 2),
+(26, 'adora_3.5ziLinks_hochsaison', 'CHF', '1160', 10, 2),
+(27, 'adora_6.5zi_hochsaison', 'CHF', '1980', 11, 2),
+(28, 'selika_2zi_feiertage', 'CHF', '1150', 1, 1),
+(29, 'selika_3.5ziEG_feiertage', 'CHF', '1400', 2, 1),
+(30, 'selika_3.5ziCR_feiertage', 'CHF', '1350', 3, 1),
+(31, 'selika_4.5zi_feiertage', 'CHF', '1700', 4, 1),
+(32, 'adora_2.5zi_feiertage', 'CHF', '1250', 6, 1),
+(33, 'adora_3.5ziBlau_feiertage', 'CHF', '1350', 9, 1),
+(34, 'adora_3.5ziLinks_feiertage', 'CHF', '1350', 10, 1),
+(35, 'adora_6.5zi_feiertage', 'CHF', '2400', 11, 1),
+(36, 'selika_5.5zi_vorUnachSaison', 'CHF', '1200', 12, 5),
+(37, 'selika_5.5zi_zwischensaison', 'CHF', '1400', 12, 4),
+(38, 'selika_5.5zi_hochsaison', 'CHF', '2180', 12, 2),
+(39, 'adora_5.5zi_feiertage', 'CHF', '2900', 12, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `appartment_reservation`
+--
+
+CREATE TABLE IF NOT EXISTS `appartment_reservation` (
+  `uid` int(11) NOT NULL auto_increment,
+  `r_created` datetime default NULL,
+  `r_name` varchar(200) collate latin1_german1_ci default NULL,
+  `r_prename` varchar(200) collate latin1_german1_ci default NULL,
+  `r_address` varchar(200) collate latin1_german1_ci default NULL,
+  `r_plz` varchar(200) collate latin1_german1_ci default NULL,
+  `r_ort` varchar(200) collate latin1_german1_ci default NULL,
+  `r_email` varchar(200) collate latin1_german1_ci default NULL,
+  `r_tel` varchar(200) collate latin1_german1_ci default NULL,
+  `r_comment` varchar(500) collate latin1_german1_ci default NULL,
+  `r_arrival` datetime default NULL,
+  `r_departure` datetime default NULL,
+  `r_numpers` int(11) default NULL,
+  `r_numchilds` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `appartment_reservation`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `appartment_season`
+--
+
+CREATE TABLE IF NOT EXISTS `appartment_season` (
+  `uid` int(11) NOT NULL auto_increment,
+  `s_date_from` date default NULL,
+  `s_date_to` date default NULL,
+  `s_seasontype_id` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`uid`,`s_seasontype_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=12 ;
+
+--
+-- Daten für Tabelle `appartment_season`
+--
+
+INSERT INTO `appartment_season` (`uid`, `s_date_from`, `s_date_to`, `s_seasontype_id`) VALUES
+(1, '2010-12-25', '2010-12-31', 1),
+(2, '2011-01-01', '2011-02-04', 4),
+(3, '2011-02-05', '2011-03-18', 2),
+(4, '2011-03-19', '2011-04-08', 4),
+(5, '2011-04-09', '2011-04-22', 5),
+(6, '2011-04-23', '2011-07-01', 4),
+(7, '2011-07-02', '2011-08-19', 2),
+(8, '2011-08-20', '2011-10-21', 4),
+(9, '2011-10-22', '2011-12-16', 5),
+(10, '2011-12-17', '2011-12-23', 2),
+(11, '2011-12-24', '2011-12-30', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `appartment_seasontype`
+--
+
+CREATE TABLE IF NOT EXISTS `appartment_seasontype` (
+  `uid` int(11) NOT NULL auto_increment,
+  `st_name` varchar(200) collate latin1_german1_ci default NULL,
+  `st_color` varchar(200) collate latin1_german1_ci default NULL,
+  `st_description` varchar(200) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=6 ;
+
+--
+-- Daten für Tabelle `appartment_seasontype`
+--
+
+INSERT INTO `appartment_seasontype` (`uid`, `st_name`, `st_color`, `st_description`) VALUES
+(1, 'fw_season_newYear', '#BF0682', 'Neujahr'),
+(2, 'fw_season_high', '#519EC4', 'Hochsaison'),
+(5, 'fw_season_offpeak', '#9B839A', 'Vor- und Nachsaison'),
+(4, 'fw_season_off', '#3A006D', 'Zwischensaison');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `concert`
+--
+
+CREATE TABLE IF NOT EXISTS `concert` (
+  `uid` int(11) NOT NULL auto_increment,
+  `c_date` date default NULL,
+  `c_time` time default NULL,
+  `c_title` varchar(200) collate latin1_german1_ci default NULL,
+  `c_description` varchar(1000) collate latin1_german1_ci default NULL,
+  `c_location` varchar(300) collate latin1_german1_ci default NULL,
+  `c_link` varchar(300) collate latin1_german1_ci default NULL,
+  `c_canceled` int(1) default NULL,
+  `c_album_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `concert`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `uid` int(11) NOT NULL auto_increment,
+  `c_created` datetime default NULL,
+  `c_name` varchar(200) collate latin1_german1_ci default NULL,
+  `c_email` varchar(200) collate latin1_german1_ci default NULL,
+  `c_description` varchar(1000) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `contact`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `contract`
+--
+
+CREATE TABLE IF NOT EXISTS `contract` (
+  `uid` int(11) NOT NULL auto_increment,
+  `c_shortName` varchar(100) collate latin1_german1_ci default NULL,
+  `c_description` varchar(200) collate latin1_german1_ci default NULL,
+  `c_created` datetime default NULL,
+  `c_creator_id` int(11) default NULL,
+  `c_slaMoFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaMoTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaDiFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaDiTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaMiFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaMiTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaDoFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaDoTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaFrFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaFrTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaSaFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaSaTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaSoFrom` varchar(100) collate latin1_german1_ci default NULL,
+  `c_slaSoTo` varchar(100) collate latin1_german1_ci default NULL,
+  `c_recHigh` varchar(100) collate latin1_german1_ci default NULL,
+  `c_recMid` varchar(100) collate latin1_german1_ci default NULL,
+  `c_recLow` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `contract`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `element`
+--
+
+CREATE TABLE IF NOT EXISTS `element` (
+  `uid` int(11) NOT NULL auto_increment,
+  `e_text` varchar(200) collate latin1_german1_ci default NULL,
+  `e_parent_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `element`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `fle_animal`
+--
+
+CREATE TABLE IF NOT EXISTS `fle_animal` (
+  `uid` int(11) NOT NULL auto_increment,
+  `a_name` varchar(100) collate latin1_german1_ci default NULL,
+  `a_mark` varchar(100) collate latin1_german1_ci default NULL,
+  `a_race` int(11) default NULL,
+  `a_selldate` date default NULL,
+  `a_weight_val` int(11) default NULL,
+  `a_weight_real` int(11) default NULL,
+  `a_mother` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=6 ;
+
+--
+-- Daten für Tabelle `fle_animal`
+--
+
+INSERT INTO `fle_animal` (`uid`, `a_name`, `a_mark`, `a_race`, `a_selldate`, `a_weight_val`, `a_weight_real`, `a_mother`) VALUES
+(2, 'Kennedy', '238423234234.234', 1, '2022-04-20', 140, 110, 'Zuesi'),
+(3, 'Maya', '34234.234.234.', 2, '2022-03-20', 100, 110, 'Flurina'),
+(4, 'Bobby', '9872934.23423.234', 3, '2012-01-20', 130, 120, 'Blüemli'),
+(5, 'Heinz', '1234.1234.3.33.', 1, '2010-04-20', 150, 160, 'Bärbi');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `fle_client`
+--
+
+CREATE TABLE IF NOT EXISTS `fle_client` (
+  `uid` int(11) NOT NULL auto_increment,
+  `c_vorname` varchar(100) collate latin1_german1_ci default NULL,
+  `c_nachname` varchar(100) collate latin1_german1_ci default NULL,
+  `c_strasse` varchar(100) collate latin1_german1_ci default NULL,
+  `c_plz` int(11) default NULL,
+  `c_ort` varchar(100) collate latin1_german1_ci default NULL,
+  `c_tel` varchar(100) collate latin1_german1_ci default NULL,
+  `c_mobile` varchar(200) collate latin1_german1_ci default NULL,
+  `c_email` varchar(200) collate latin1_german1_ci default NULL,
+  `c_hack` int(11) default NULL,
+  `c_ragout` int(11) default NULL,
+  `c_gesch` int(11) default NULL,
+  `c_leber` int(1) default NULL,
+  `c_numleber` int(11) default NULL,
+  `c_tiernahrung` int(1) default NULL,
+  `c_comment` varchar(400) collate latin1_german1_ci default NULL,
+  `c_specials` varchar(400) collate latin1_german1_ci default NULL,
+  `c_knochen` int(1) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=5 ;
+
+--
+-- Daten für Tabelle `fle_client`
+--
+
+INSERT INTO `fle_client` (`uid`, `c_vorname`, `c_nachname`, `c_strasse`, `c_plz`, `c_ort`, `c_tel`, `c_mobile`, `c_email`, `c_hack`, `c_ragout`, `c_gesch`, `c_leber`, `c_numleber`, `c_tiernahrung`, `c_comment`, `c_specials`, `c_knochen`) VALUES
+(1, 'Ueli', 'Wyss', 'Bödeli', 3822, 'Isenfluh', '033 855 24 35', '', '', 200, 200, 200, 0, 0, 0, '', NULL, 0),
+(2, 'Lukas', 'Wyss', 'Bödeli', 3822, 'Isenfluh', '078 689 15 18', NULL, 'lukaswyss1@gmx.ch', 300, 250, 500, 1, 0, 0, NULL, NULL, 0),
+(3, 'Simone', 'Steiner', 'Schulgässli 65', 3812, 'Wilderswil', '079 661 52 44', NULL, 'hase2@gmx.ch', 500, 500, 500, 0, 0, 0, NULL, NULL, 0),
+(4, 'Max', 'Schaad', 'Haldenstrasse 28', 3012, 'Bern', '031 332 78 18', '', '', 300, 300, 300, 1, 2, 1, '', NULL, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `fle_order`
+--
+
+CREATE TABLE IF NOT EXISTS `fle_order` (
+  `uid` int(11) NOT NULL auto_increment,
+  `o_client_id` int(11) default NULL,
+  `o_animal_id` int(11) default NULL,
+  `o_createdate` date default NULL,
+  `o_comment` varchar(400) collate latin1_german1_ci default NULL,
+  `o_specials` varchar(400) collate latin1_german1_ci default NULL,
+  `o_fleisch_ord` float default NULL,
+  `o_fleisch_real` float default NULL,
+  `o_fleisch_price` float default NULL,
+  `o_kaese_ord` float default NULL,
+  `o_kaese_price` float default NULL,
+  `o_wurst_ord` int(11) default NULL,
+  `o_wurst_price` float default NULL,
+  `o_trockenfleisch_ord` float default NULL,
+  `o_trockenfleisch_price` float default NULL,
+  `o_filet_ord` float default NULL,
+  `o_filet_real` float default NULL,
+  `o_leber` int(1) default NULL,
+  `o_numleber` int(11) default NULL,
+  `o_tiernahrung` int(1) default NULL,
+  `o_knochen` int(1) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=13 ;
+
+--
+-- Daten für Tabelle `fle_order`
+--
+
+INSERT INTO `fle_order` (`uid`, `o_client_id`, `o_animal_id`, `o_createdate`, `o_comment`, `o_specials`, `o_fleisch_ord`, `o_fleisch_real`, `o_fleisch_price`, `o_kaese_ord`, `o_kaese_price`, `o_wurst_ord`, `o_wurst_price`, `o_trockenfleisch_ord`, `o_trockenfleisch_price`, `o_filet_ord`, `o_filet_real`, `o_leber`, `o_numleber`, `o_tiernahrung`, `o_knochen`) VALUES
+(1, 4, 2, '2011-01-04', '', '', 10, 10, 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0),
+(2, 1, 2, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(3, 1, 2, '2011-01-04', '', '', 12, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(4, 3, 2, '2011-01-04', '', '', 12, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(5, 3, 2, '2011-01-04', '', '', 10, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(6, 4, 2, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 0),
+(7, 3, 2, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(8, 3, 2, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(9, 2, 2, '2011-01-04', '', '', 10, 12.1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0),
+(10, 0, 2, '2011-01-04', '', '', 12.12, 12.12, 32, 12.12, 12.12, 0, 12.12, 12.12, 12.12, 12.12, 12.12, 0, 0, 0, 0),
+(11, 0, 2, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(12, 0, 0, '2011-01-04', '', '', 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `guestbook`
+--
+
+CREATE TABLE IF NOT EXISTS `guestbook` (
+  `uid` int(11) NOT NULL auto_increment,
+  `g_created` datetime default NULL,
+  `g_name` varchar(200) collate latin1_german1_ci default NULL,
+  `g_text` varchar(500) collate latin1_german1_ci default NULL,
+  `g_email` varchar(200) collate latin1_german1_ci default NULL,
+  `g_captcha` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `guestbook`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `image`
+--
+
+CREATE TABLE IF NOT EXISTS `image` (
+  `uid` int(11) NOT NULL auto_increment,
+  `i_created` datetime default NULL,
+  `i_description` varchar(200) collate latin1_german1_ci default NULL,
+  `i_title` varchar(200) collate latin1_german1_ci default NULL,
+  `i_source` varchar(200) collate latin1_german1_ci default NULL,
+  `i_album_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `image`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `module`
+--
+
+CREATE TABLE IF NOT EXISTS `module` (
+  `uid` int(11) NOT NULL auto_increment,
+  `m_created` date default NULL,
+  `m_type` varchar(200) collate latin1_german1_ci default NULL,
+  `m_name` varchar(400) collate latin1_german1_ci default NULL,
+  `m_classpath` varchar(1000) collate latin1_german1_ci default NULL,
+  `m_version` varchar(300) collate latin1_german1_ci default NULL,
+  `m_active` int(1) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=18 ;
+
+--
+-- Daten für Tabelle `module`
+--
+
+INSERT INTO `module` (`uid`, `m_created`, `m_type`, `m_name`, `m_classpath`, `m_version`, `m_active`) VALUES
+(1, '2011-01-04', '', '.svn', '.svn/', '', 0),
+(2, '2011-01-04', 'Datamanagement', 'dat_fleisch', 'dat_fleisch/class.fleisch.php', '1.0', 1),
+(3, '2011-01-04', 'Datamanagement', 'dat_fpdf', 'dat_fpdf/fpdf.php', '1.0', 1),
+(4, '2011-01-04', 'Datamanagement', 'dat_ticketing', 'dat_ticketing/class.ticket.php', '1.0', 1),
+(5, '2011-01-04', 'Datamanagement', 'dat_user', 'dat_user/class.userrights.php', '1.0', 1),
+(6, '2011-01-04', 'Test', 'test_treeview', 'test_treeview/class.test.php', '1.0', 1),
+(7, '2011-01-04', 'Web', 'web_appartment_price', 'web_appartment_price/class.appartment_price.php', '0.9', 1),
+(8, '2011-01-04', 'Web', 'web_appartment_reservation', 'web_appartment_reservation/class.appartment_reservation.php', '1.0', 1),
+(9, '2011-01-04', 'Web', 'web_captcha', 'web_captcha/class.captcha.php', '1.0', 1),
+(10, '2011-01-04', 'Web', 'web_concert', 'web_concert/class.concert.php', '0.9', 1),
+(11, '2011-01-04', 'Web', 'web_contact', 'web_contact/class.contact.php', '0.9', 1),
+(12, '2011-01-04', 'Web', 'web_currency', 'web_currency/class.currency.php', '0.2', 1),
+(13, '2011-01-04', 'Web', 'web_gallery', 'web_gallery/class.gallery.php', '0.9', 1),
+(14, '2011-01-04', 'Web', 'web_guestbook', 'web_guestbook/class.guestbook.php', '1.0', 1),
+(15, '2011-01-04', 'Web', 'web_news', 'web_news/class.news.php', '0.9', 1),
+(16, '2011-01-04', 'Web', 'web_text', 'web_text/class.text.php', '0.1', 1),
+(17, '2011-01-04', '', 'dat_rechnung', 'dat_rechnung/', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `uid` int(11) NOT NULL auto_increment,
+  `n_created` datetime default NULL,
+  `n_title` varchar(200) collate latin1_german1_ci default NULL,
+  `n_description` varchar(1000) collate latin1_german1_ci default NULL,
+  `n_content` varchar(3000) collate latin1_german1_ci default NULL,
+  `n_hidden` int(1) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `news`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `page`
+--
+
+CREATE TABLE IF NOT EXISTS `page` (
+  `uid` int(11) NOT NULL auto_increment,
+  `p_text` varchar(200) collate latin1_german1_ci default NULL,
+  `p_parent_id` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `page`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `page_element`
+--
+
+CREATE TABLE IF NOT EXISTS `page_element` (
+  `pe_page_id` int(11) NOT NULL default '0',
+  `pe_element_id` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`pe_page_id`,`pe_element_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `page_element`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `text`
+--
+
+CREATE TABLE IF NOT EXISTS `text` (
+  `uid` int(11) NOT NULL auto_increment,
+  `t_created` datetime default NULL,
+  `t_description` varchar(1000) collate latin1_german1_ci default NULL,
+  `t_keyname` varchar(1000) collate latin1_german1_ci default NULL,
+  `t_content_de` varchar(10000) collate latin1_german1_ci default NULL,
+  `t_content_en` varchar(10000) collate latin1_german1_ci default NULL,
+  `t_content_fr` varchar(10000) collate latin1_german1_ci default NULL,
+  `t_content_it` varchar(10000) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `text`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `ticket`
+--
+
+CREATE TABLE IF NOT EXISTS `ticket` (
+  `uid` int(11) NOT NULL auto_increment,
+  `t_number` varchar(20) collate latin1_german1_ci default NULL,
+  `t_trigger_id` int(11) default NULL,
+  `t_created` datetime default NULL,
+  `t_closed` datetime default NULL,
+  `t_contract_id` int(11) default NULL,
+  `t_lastEditor_id` int(11) default NULL,
+  `t_owner_id` int(11) default NULL,
+  `t_team_id` int(11) default NULL,
+  `t_priority` int(11) default NULL,
+  `t_description` varchar(1000) collate latin1_german1_ci default NULL,
+  `t_status` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `ticket`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `tickethasaddition`
+--
+
+CREATE TABLE IF NOT EXISTS `tickethasaddition` (
+  `ta_ticket_id` int(11) NOT NULL default '0',
+  `ta_addition_id` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`ta_ticket_id`,`ta_addition_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `tickethasaddition`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_department`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_department` (
+  `uid` int(11) NOT NULL auto_increment,
+  `d_name` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `usr_department`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_group`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_group` (
+  `uid` int(11) NOT NULL auto_increment,
+  `g_name` varchar(100) collate latin1_german1_ci default NULL,
+  `g_created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `usr_group`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_grouphasperm`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_grouphasperm` (
+  `gp_group_id` int(11) NOT NULL default '0',
+  `gp_resource_id` int(11) NOT NULL default '0',
+  `gp_permission` int(2) default NULL,
+  PRIMARY KEY  (`gp_group_id`,`gp_resource_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `usr_grouphasperm`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_location`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_location` (
+  `uid` int(11) NOT NULL auto_increment,
+  `l_name` varchar(100) collate latin1_german1_ci default NULL,
+  `l_strasse` varchar(100) collate latin1_german1_ci default NULL,
+  `l_plz` varchar(100) collate latin1_german1_ci default NULL,
+  `l_ort` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `usr_location`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_resource`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_resource` (
+  `uid` int(11) NOT NULL auto_increment,
+  `r_name` varchar(100) collate latin1_german1_ci default NULL,
+  `r_shortName` varchar(100) collate latin1_german1_ci default NULL,
+  `r_created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `r_description` varchar(400) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=21 ;
+
+--
+-- Daten für Tabelle `usr_resource`
+--
+
+INSERT INTO `usr_resource` (`uid`, `r_name`, `r_shortName`, `r_created`, `r_description`) VALUES
+(1, 'Tickets', 'ticket', '2011-01-04 18:15:23', 'Beinhaltet alle Tickets.'),
+(2, 'Team-Tickets', 'ticket_ofTeam', '2011-01-04 18:15:23', 'Beinhaltet alle Tickets des Teams, dem der Benutzer angehört.'),
+(3, 'Eigene Tickets', 'ticket_own', '2011-01-04 18:15:23', 'Beinhaltet die eigenen Tickets eines Benutzers.'),
+(4, 'Neues Ticket', 'ticket_new', '2011-01-04 18:15:23', 'Aktion, neue Tickets erfassen.'),
+(5, 'Verträge', 'contract', '2011-01-04 18:15:23', 'Beinhaltet alle Verträge (SLAs).'),
+(6, 'Synchronisations-Tasks', 'usr_sync', '2011-01-04 18:15:23', 'Beinhaltet alle Synchronisations-Tasks.'),
+(7, 'Synchronisations-Tasks ausführen', 'usr_sync_exec', '2011-01-04 18:15:23', 'Aktion, die das eine Synchronisation auslöst (Achtung: Dies ist eine Aktion und kein Objekt)'),
+(8, 'Benutzer', 'usr_user', '2011-01-04 18:15:23', 'Schliesst alle Benutzer ein, gilt jedoch nicht für die Elemente, welche dem Benutzer zugewiesen sind (Berechtigungen, Gruppen, Sessions)'),
+(9, 'Benutzer>>Berechtigungen', 'usr_user_perms', '2011-01-04 18:15:23', 'Beinhaltet die Aktivität Benutzern Berechtigungen zuzuweisen, diese Verbindung zu ändern und zu löschen.'),
+(10, 'Benutzer>>Gruppen', 'usr_user_groups', '2011-01-04 18:15:23', 'Beinhaltet die Aktivität Benutzern zu Gruppen zuzuordnen, diese Verbindung zu ändern und zu löschen.'),
+(11, 'Benutzer>>Sessions', 'usr_user_sessions', '2011-01-04 18:15:23', 'Sessions des Benutzers durchschauen.'),
+(12, 'Sessions', 'usr_session', '2011-01-04 18:15:23', 'Beinhaltet alle Session-Objekte (Diese Objekte können nicht bearbeitet werden. Also im höchsten Fall Lese-Berechtigung)'),
+(13, 'Abteilungen', 'usr_department', '2011-01-04 18:15:23', 'Schliesst alle Abteilungen ein.'),
+(14, 'Standorte', 'usr_location', '2011-01-04 18:15:23', 'Schliesst alle Firmen-Standorte ein.'),
+(15, 'Gruppen', 'usr_group', '2011-01-04 18:15:23', 'Schliesst alle Gruppen ein.'),
+(16, 'Gruppen>>Berechtigungen', 'usr_group_perms', '2011-01-04 18:15:23', 'Beinhaltet die Aktivität Gruppen Berechtigungen zuzuweisen, diese Verbindung zu ändern und zu löschen.'),
+(17, 'Rollen', 'usr_roll', '2011-01-04 18:15:23', 'Schliesst alle Rollen ein. (Auf dieses Objekt kann höchsten "Lesen" vergeben werden'),
+(18, 'Rollen>>Berechtigungen', 'usr_roll_perms', '2011-01-04 18:15:23', 'Beinhaltet die Aktivität Rollen Berechtigungen zuzuweisen, diese Verbindung zu ändern und zu löschen.'),
+(19, 'Support-Teams', 'usr_team', '2011-01-04 18:15:23', 'Schliesst alle Support-Teams ein.'),
+(20, 'Gruppen>>Berechtigungen', 'usr_team_perms', '2011-01-04 18:15:23', 'Beinhaltet die Aktivität Support-Teams Berechtigungen zuzuweisen, diese Verbindung zu ändern und zu löschen.');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_roll`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_roll` (
+  `uid` int(11) NOT NULL auto_increment,
+  `r_name` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=5 ;
+
+--
+-- Daten für Tabelle `usr_roll`
+--
+
+INSERT INTO `usr_roll` (`uid`, `r_name`) VALUES
+(1, 'Superuser'),
+(2, 'Administrator'),
+(3, 'Agent'),
+(4, 'Kunde');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_rollhasperm`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_rollhasperm` (
+  `rp_roll_id` int(11) NOT NULL default '0',
+  `rp_resource_id` int(11) NOT NULL default '0',
+  `rp_permission` int(2) default NULL,
+  PRIMARY KEY  (`rp_roll_id`,`rp_resource_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `usr_rollhasperm`
+--
+
+INSERT INTO `usr_rollhasperm` (`rp_roll_id`, `rp_resource_id`, `rp_permission`) VALUES
+(1, 0, 3),
+(2, 0, 3),
+(3, 0, 2),
+(4, 0, 1),
+(1, 8, 3),
+(1, 9, 3),
+(1, 10, 3),
+(1, 11, 3),
+(1, 15, 3),
+(1, 16, 3),
+(1, 19, 3),
+(1, 20, 3),
+(1, 12, 3),
+(1, 14, 3),
+(1, 6, 3),
+(1, 7, 3),
+(1, 17, 3),
+(1, 18, 3),
+(1, 13, 3),
+(1, 1, 3),
+(1, 2, 3),
+(1, 3, 3),
+(1, 5, 3),
+(1, 4, 3),
+(2, 8, 3),
+(2, 9, 3),
+(2, 10, 3),
+(2, 11, 3),
+(2, 15, 3),
+(2, 16, 3),
+(2, 19, 3),
+(2, 20, 3),
+(2, 12, 3),
+(2, 14, 3),
+(2, 6, 3),
+(2, 7, 3),
+(2, 17, 3),
+(2, 18, 3),
+(2, 13, 3),
+(2, 1, 3),
+(2, 2, 3),
+(2, 3, 3),
+(2, 5, 3),
+(2, 4, 3),
+(3, 8, 2),
+(3, 9, 2),
+(3, 10, 2),
+(3, 11, 2),
+(3, 15, 2),
+(3, 16, 2),
+(3, 19, 2),
+(3, 20, 2),
+(3, 12, 2),
+(3, 14, 2),
+(3, 6, 2),
+(3, 7, 2),
+(3, 17, 2),
+(3, 18, 2),
+(3, 13, 2),
+(3, 1, 3),
+(3, 2, 3),
+(3, 3, 3),
+(3, 5, 2),
+(3, 4, 3),
+(4, 8, 1),
+(4, 9, 1),
+(4, 10, 1),
+(4, 11, 1),
+(4, 15, 1),
+(4, 16, 1),
+(4, 19, 1),
+(4, 20, 1),
+(4, 12, 1),
+(4, 14, 1),
+(4, 6, 1),
+(4, 7, 1),
+(4, 17, 1),
+(4, 18, 1),
+(4, 13, 1),
+(4, 1, 2),
+(4, 2, 1),
+(4, 3, 2),
+(4, 5, 1),
+(4, 4, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_session`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_session` (
+  `uid` int(11) NOT NULL auto_increment,
+  `s_ip` varchar(30) collate latin1_german1_ci default NULL,
+  `s_openTime` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `s_closeTime` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `s_sid` varchar(200) collate latin1_german1_ci default NULL,
+  `s_user` varchar(100) collate latin1_german1_ci default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=3 ;
+
+--
+-- Daten für Tabelle `usr_session`
+--
+
+INSERT INTO `usr_session` (`uid`, `s_ip`, `s_openTime`, `s_closeTime`, `s_sid`, `s_user`) VALUES
+(1, '84.226.138.58 ()', '2011-01-04 18:25:36', '2011-01-04 18:25:35', '50ebe540cc3f2c02a2cfe09fd6a90628', 'sa'),
+(2, '84.226.138.58 ()', '2011-01-04 18:25:40', '0000-00-00 00:00:00', '50ebe540cc3f2c02a2cfe09fd6a90628', 'sa');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_sync`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_sync` (
+  `uid` int(11) NOT NULL auto_increment,
+  `s_name` varchar(100) collate latin1_german1_ci default NULL,
+  `s_description` varchar(200) collate latin1_german1_ci default NULL,
+  `s_host` varchar(100) collate latin1_german1_ci default NULL,
+  `s_domain` varchar(100) collate latin1_german1_ci default NULL,
+  `s_ou` varchar(100) collate latin1_german1_ci default NULL,
+  `s_username` varchar(100) collate latin1_german1_ci default NULL,
+  `s_password` varchar(200) collate latin1_german1_ci default NULL,
+  `s_active` int(1) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `usr_sync`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_team`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_team` (
+  `uid` int(11) NOT NULL auto_increment,
+  `t_name` varchar(100) collate latin1_german1_ci default NULL,
+  `t_created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `t_supportLevel` int(2) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `usr_team`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_teamhasperm`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_teamhasperm` (
+  `tp_team_id` int(11) NOT NULL default '0',
+  `tp_resource_id` int(11) NOT NULL default '0',
+  `tp_permission` int(2) default NULL,
+  PRIMARY KEY  (`tp_team_id`,`tp_resource_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `usr_teamhasperm`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_user`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_user` (
+  `uid` int(11) NOT NULL auto_increment,
+  `u_vorname` varchar(100) collate latin1_german1_ci default NULL,
+  `u_nachname` varchar(100) collate latin1_german1_ci default NULL,
+  `u_zeichen` varchar(100) collate latin1_german1_ci default NULL,
+  `u_strasse` varchar(100) collate latin1_german1_ci default NULL,
+  `u_plz` int(11) default NULL,
+  `u_ort` varchar(100) collate latin1_german1_ci default NULL,
+  `u_loginName` varchar(100) collate latin1_german1_ci default NULL,
+  `u_password` varchar(200) collate latin1_german1_ci default NULL,
+  `u_lastLogin` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `u_synchronize` int(1) default NULL,
+  `u_lastSync` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `u_locked` int(1) default NULL,
+  `u_created` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `u_department_id` int(11) default NULL,
+  `u_roll_id` int(11) default NULL,
+  `u_location_id` int(11) default NULL,
+  `u_lang` int(11) default NULL,
+  `u_lastPwChange` timestamp NOT NULL default '0000-00-00 00:00:00',
+  `u_tel` varchar(100) collate latin1_german1_ci default NULL,
+  `u_fax` varchar(100) collate latin1_german1_ci default NULL,
+  `u_mobile` varchar(200) collate latin1_german1_ci default NULL,
+  `u_active` int(1) default NULL,
+  `u_loginMode` int(1) default NULL,
+  `u_email` varchar(200) collate latin1_german1_ci default NULL,
+  `u_sync_id` varchar(200) collate latin1_german1_ci default NULL,
+  `u_team_id` int(10) default NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci AUTO_INCREMENT=2 ;
+
+--
+-- Daten für Tabelle `usr_user`
+--
+
+INSERT INTO `usr_user` (`uid`, `u_vorname`, `u_nachname`, `u_zeichen`, `u_strasse`, `u_plz`, `u_ort`, `u_loginName`, `u_password`, `u_lastLogin`, `u_synchronize`, `u_lastSync`, `u_locked`, `u_created`, `u_department_id`, `u_roll_id`, `u_location_id`, `u_lang`, `u_lastPwChange`, `u_tel`, `u_fax`, `u_mobile`, `u_active`, `u_loginMode`, `u_email`, `u_sync_id`, `u_team_id`) VALUES
+(1, 'Superadministrator', 'Nicht löschen!!!', NULL, NULL, NULL, NULL, 'sa', '827ccb0eea8a706c4c34a16891f84e7b', '2011-01-04 18:15:21', NULL, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', NULL, 1, NULL, NULL, '0000-00-00 00:00:00', NULL, NULL, NULL, 1, 1, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_userhasperm`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_userhasperm` (
+  `up_user_id` int(11) NOT NULL default '0',
+  `up_resource_id` int(11) NOT NULL default '0',
+  `up_permission` int(2) default NULL,
+  PRIMARY KEY  (`up_user_id`,`up_resource_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `usr_userhasperm`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `usr_useringroup`
+--
+
+CREATE TABLE IF NOT EXISTS `usr_useringroup` (
+  `ug_user_id` int(11) NOT NULL default '0',
+  `ug_group_id` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`ug_user_id`,`ug_group_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci;
+
+--
+-- Daten für Tabelle `usr_useringroup`
+--
+

@@ -1,0 +1,16 @@
+<module>
+	<name>web_concert</name>
+	<version>0.9</version>
+	<components>
+		<mainclass>class.concert.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<concert>edit_concert.php</concert>
+		</subMenuItems>
+	</menu>
+</module>
+	

@@ -1,0 +1,23 @@
+<module>
+	<name>dat_user</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.userrights.php</mainclass>
+	</components>
+	<type>Basic</type>
+	<active>1</active>
+	<menu>
+		<topLevel>Benutzerverwaltung</topLevel>
+		<subMenuItems>
+			<Benutzer resource="usr_user">edit_usr_user.php</Benutzer>
+			<Arbeitsgruppen resource="usr_user_groups">edit_usr_group.php</Arbeitsgruppen>
+			<Rollen resource="usr_roll">edit_usr_roll.php</Rollen>
+			<Abteilungen resource="usr_department">edit_usr_department.php</Abteilungen>
+			<Synchronisation resource="usr_sync">edit_usr_sync.php</Synchronisation>
+			<Standorte resource="usr_location">edit_usr_location.php</Standorte>
+			<Supportteams resource="usr_team">edit_usr_team.php</Supportteams>
+			<Sessions resource="usr_session">edit_usr_session.php</Sessions>
+		</subMenuItems>
+	</menu>
+</module>
+	

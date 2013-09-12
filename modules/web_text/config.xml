@@ -1,0 +1,15 @@
+<module>
+	<name>web_text</name>
+	<version>0.1</version>
+	<components>
+		<mainclass>class.text.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<text>edit_text.php</text>
+		</subMenuItems>
+	</menu>
+</module>

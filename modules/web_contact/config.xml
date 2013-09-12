@@ -1,0 +1,16 @@
+<module>
+	<name>web_contact</name>
+	<version>0.9</version>
+	<components>
+		<mainclass>class.contact.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<contact>edit_contact.php</contact>
+		</subMenuItems>
+	</menu>
+</module>
+	

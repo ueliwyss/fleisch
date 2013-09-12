@@ -1,0 +1,15 @@
+<module>
+	<name>web_appartment_reservation</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.appartment_reservation.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Wohnungen</topLevel>
+		<subMenuItems>
+			<reservationen>edit_appartment_reservation.php</reservationen>
+		</subMenuItems>
+	</menu>
+</module>

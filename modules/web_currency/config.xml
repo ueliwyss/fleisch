@@ -1,0 +1,10 @@
+<module>
+	<name>web_currency</name>
+	<version>0.2</version>
+	<components>
+		<mainclass>class.currency.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>1</active>
+</module>
+	

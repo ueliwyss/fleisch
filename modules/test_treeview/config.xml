@@ -1,0 +1,18 @@
+<module>
+	<name>test_treeview</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.test.php</mainclass>
+	</components>
+	<type>Test</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Test</topLevel>
+		<subMenuItems>
+			<TestTreeview>testTreeview.php</TestTreeview>
+			<Pages>edit_page.php</Pages>
+			<Elements>edit_element.php</Elements>
+		</subMenuItems>
+	</menu>
+</module>
+	

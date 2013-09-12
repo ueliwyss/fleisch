@@ -1,0 +1,17 @@
+<module>
+	<name>dat_ticketing</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.ticket.php</mainclass>
+	</components>
+	<type>Basic</type>
+	<active>1</active>
+	<menu>
+		<topLevel>Ticketing</topLevel>
+		<subMenuItems>
+			<Tickets resource="ticket">edit_ticket.php</Tickets>
+			<Vertraege resource="contract">edit_contract.php</Vertraege>
+		</subMenuItems>
+	</menu>
+</module>
+	

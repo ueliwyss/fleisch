@@ -1,0 +1,10 @@
+<module>
+	<name>web_captcha</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.captcha.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+</module>
+	

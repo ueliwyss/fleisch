@@ -1,0 +1,81 @@
+#signmenu{margin-right:4px;float:left}
+#signmenu{width:126px}
+#signmenu .top{font-weight:bold;background:url(images/boxtop.gif) top left;text-align:left;padding:9px 9px 3px 9px;line-height:13px}
+#signmenu .bot{background:url(images/boxbot.gif) bottom left;text-align:left;width:126px;padding-bottom:5px;overflow:hidden;margin:0 0 4px 0}
+#signmenu .top p{margin:0;background:url(images/dot.gif) bottom left repeat-x}
+#signmenu .bot ul{list-style-image:url(images/lstarr.gif);margin:0 4px 0 8px}
+
+.colorboxtext{float:left;margin:2px 0;line-height:16px;}
+
+.sumupbg{width:608px;height:25px;clear:both;font-weight:bold;background-color:#e9f6ff;padding:4px;margin:6px 6px 0 6px}
+.sumup{width:605px;height:25px;clear:both;padding:4px;margin:0 6px 0 6px}
+.promocode{width:580px;height:20px;clear:both;margin:0 6px 0 6px;color:ff0000 ;font-size=10px}
+.productbox1{width:100px;float:left}
+.productbox2{width:160px;float:left}
+.productbox3{width:120px;float:left}
+.productbox4{width:128px;float:left}
+.productbox5{width:80px;float:left}
+
+.paymentbox1{width:80px;float:left}
+.paymentbox2{width:100px;float:left}
+.paymentbox3{width:120px;float:left}
+.paymentbox4{width:190px;float:left}
+.paymentbox5{width:80px;float:left}
+
+.colbc1{width:300px;float:left}
+.colbc2{width:140px;float:left}
+.colbc3{width:140px;float:left}
+
+.paymentformblock{margin:6px 0 0 0;width:100px;float:left;text-align:center}
+.paymentformbox{width:100px;float:left}
+
+.mformblock{width:599px;clear:both;6px;padding:0 0 0 0}
+.mformlabel1{float:left;margin:2px 0;line-height:22px;width:100px}
+.mformlabel2{float:left;margin:2px 0;line-height:22px;width:15px}
+.mformlabel3{float:left;margin:2px 0;line-height:22px;}
+.mformsep{float:left;margin:2px 0;line-height:22px;width:65px;}
+
+.scrollbox{height:100px;overflow:auto;width:618px}
+.selecttxt{margin:0 0 0 6px;float:left}
+.selectbox{margin:10px 0 0 6px}
+
+.title{font:12px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;clear:both;color:#478ff1;float:left;margin:6px 0 0 4px}
+.txt1{font:10px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;float:left;color:#666666;margin:0 0 0 6px}
+.txt2{margin:12px 0 0 6px}
+.txt3{color:#666666}
+.txt4{font:10px "trebuchet ms",tahoma,Geneva,Arial,Helvetica,sans-serif;float:left;color:#ff5e5e;margin:0 0 0 6px}
+
+.login{font-weight:bold}
+
+.formblock{overflow:visible;margin:0 0 0 6px;clear:both;padding:4px 0 4px 6px}
+
+.paylink{text-decoration:underlined;margin:12px 0 0 6px}
+
+.line{width:590px}
+.line .col1{width:190px;float:left;text-align:left}
+.line .col2{width:190px;float:left;text-align:center}
+.line .col3{width:190px;float:left;text-align:right}
+.line .col3{mobwidth:380px;float:left;text-align:right}
+.line .colcontact{width:100px;float:left;align:left}
+.line .colemail{width:190px;float:left;align:right}
+
+.blueline{width:590px;background-color:#c8e7ff;float:left}
+.blueline .col1{width:190px;float:left;text-align:left}
+.blueline .col2{width:190px;float:left;text-align:center}
+.blueline .col3{width:190px;float:left;text-align:right}
+.blueline .col3mob{width:380px;float:left;text-align:right}
+
+.mandatory{color:ff0000;font-size:10px;width:580px;float:left}
+.errorfieldquestion{border:2px solid;border-color:#f00}
+.errorfielddob{border:2px solid;border-color:#f00;width:195px}
+.errorfieldaddress{border:2px solid;border-color:#f00;width:190px}
+.errorfieldgender{border:2px solid;border-color:#f00;width:145px}
+.errorfieldoccupation{border:2px solid;border-color:#f00 width:300px}
+.errorfieldinterest{border:2px solid;border-color:#f00;width:590px;float:left}
+
+.packdetail{background-color:#f4f9fd;clear:both;line-height:22px;margin:0 6px 0 6px}
+
+a.terms{text-decoration:underline;color:black}
+a.terms:visited{text-decoration:underline;color:black}
+a.terms:link{text-decoration:underline;color:black}
+a.terms:hover{text-decoration:underline;color:black}

@@ -1,0 +1,19 @@
+<module>
+	<name>dat_user</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.fleisch.php</mainclass>
+	</components>
+	<type>Datamanagement</type>
+	<active>1</active>
+	<menu>
+		<topLevel>Fleisch</topLevel>
+		<subMenuItems>
+			<Kunden resource="fle_client">edit_fle_client.php</Kunden>
+			<Tiere resource="fle_animal">edit_fle_animal.php</Tiere>
+			<Bestellungen resource="fle_order">edit_fle_order.php</Bestellungen>
+            <Import resource="fle_import">import.php</Import>
+		</subMenuItems>
+	</menu>
+</module>
+	

@@ -1,0 +1,16 @@
+<module>
+	<name>web_guestbook</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>class.guestbook.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<guestbook>edit_guestbook.php</guestbook>
+		</subMenuItems>
+	</menu>
+</module>
+	

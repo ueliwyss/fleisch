@@ -1,0 +1,11 @@
+<module>
+	<name>dat_fpdf</name>
+	<version>1.0</version>
+	<components>
+		<mainclass>fpdf.php</mainclass>
+	</components>
+	<type>Datamanagement</type>
+	<active>1</active>
+	
+</module>
+	

@@ -1,0 +1,16 @@
+<module>
+	<name>web_news</name>
+	<version>0.9</version>
+	<components>
+		<mainclass>class.news.php</mainclass>
+	</components>
+	<type>Web</type>
+	<active>0</active>
+	<menu>
+		<topLevel>Web-Content</topLevel>
+		<subMenuItems>
+			<news>edit_news.php</news>
+		</subMenuItems>
+	</menu>
+</module>
+	
