@@ -40,7 +40,7 @@ class treeView extends container {
 
 	private function getJS() {
 		return '
-var '
+var ';
 	}
 
 	public function wrapContent() {
